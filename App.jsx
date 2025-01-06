@@ -17,6 +17,7 @@ export default function App() {
     const [loading, setLoading] = React.useState(true)
     const [tempNoteText, settempNoteText] = React.useState("")
 
+
     // 以「衍生值（derived value）」處理currentNote：比將之設計為獨立的 state 要好，因為需要額外的 useEffect 來處理同步問題，而且可能會出現數據不一致
     //   1. 自動同步
     //   2. 單一數據源
